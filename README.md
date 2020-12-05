@@ -1,6 +1,5 @@
 # maghazeman-marketer
 
-## Task
 1. Fork this repository
 2. Develop the task with react js
 3. Push your code to your repository
