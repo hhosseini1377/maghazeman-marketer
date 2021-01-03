@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import "~antd/dist/antd.css";
+
+@font-face {
+  font-family: "IranSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/IranSans.eot") format("eot");
+  src: url("./assets/fonts/IranSans.woff") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container-layout {
   min-height: 100vh;
+  font-family: "IranSans";
+  color: #000;
+  background-color: #fcfcfc !important;
+}
+
+.header-layout {
+  color: #000;
   display: flex;
-  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 28px;
+  vertical-align: baseline;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.082);
+  background: #5682a3;
+  z-index: 1;
+}
+
+.content-layout {
+  display: flex;
+  flex-flow: column;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  align-content: center;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 24px;
+  min-height: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.col-style {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-layout {
+  font-size: x-large;
+  text-align: center;
+  vertical-align: baseline;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #000;
+  width: auto;
+  position: absolute;
+  min-height: fit-content;
 }
